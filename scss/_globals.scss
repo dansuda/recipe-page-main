@@ -1,0 +1,153 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    color: $stone-medium;
+    line-height: 1.5;
+
+    width: 100svw;
+
+    background-color: $stone-light-1;
+}
+
+
+
+/*for all instances of these tags */
+
+img {
+    height: 170px;
+    width: 100%;
+}
+
+h2{
+    font-family: "Young Serif", serif;
+    font-weight: $medium;
+    font-size: 1.8125rem;
+    color: $brown;
+    margin: 21px 0;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 1.5625rem;
+}
+
+ol {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 1.5625rem;
+}
+
+li {
+    padding: 0 0 0 1rem;
+
+    &:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+::marker {
+    font-weight: $bold;
+    color: $dark-rose;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: $stone-light-2;
+}
+
+
+/*for specific classes*/
+
+.container {
+    max-width: 380svw;
+    background-color: $white;
+}
+
+
+.content-container {
+    padding: 32px;
+}
+
+.main-header {
+    h1 {
+        font-family: "Young Serif", serif;
+        font-weight: $medium;
+        font-size: 2.25rem;
+        color: $stone-dark;
+        margin-top: 0;
+        line-height: 1.1;
+    }
+
+    p{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.preparation-time {
+    background-color: $light-rose;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+
+    h3 {
+        margin-top: 0;
+        color: $dark-rose;
+    }
+}
+
+.table {
+    .values {
+        display: flex;
+        border-bottom: 1px solid $stone-light-2;
+        padding-left: 2rem;
+    }
+
+    .values:last-child {
+        border-bottom: 0;
+    }
+
+    .values > * {
+        width: 100px;
+        margin-right: auto;
+    }
+
+    p {
+        margin: 0.625rem 0;
+    }
+    .bolds {
+        font-weight: $bold;
+        color: $brown;
+    }
+}
+
+
+@media(min-width:540px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-width: 46rem;
+        border-radius: 30px;
+        margin: 7.625rem 2rem;
+    }
+    img {
+        height: 100%;
+        padding: 40px 40px 0 40px;
+        //border-radius: 50px;
+    }
+}

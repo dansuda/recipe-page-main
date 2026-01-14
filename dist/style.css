@@ -1,0 +1,134 @@
+/*Colors*/
+/*Font-Weights*/
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5;
+  width: 100svw;
+  background-color: hsl(30, 54%, 90%);
+}
+
+/*for all instances of these tags */
+img {
+  height: 170px;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.8125rem;
+  color: hsl(14, 45%, 36%);
+  margin: 21px 0;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 1.5625rem;
+}
+
+ol {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 1.5625rem;
+}
+
+li {
+  padding: 0 0 0 1rem;
+}
+li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+::marker {
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+}
+
+/*for specific classes*/
+.container {
+  max-width: 380svw;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.content-container {
+  padding: 32px;
+}
+
+.main-header h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  color: hsl(24, 5%, 18%);
+  margin-top: 0;
+  line-height: 1.1;
+}
+.main-header p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+.preparation-time h3 {
+  margin-top: 0;
+  color: hsl(332, 51%, 32%);
+}
+
+.table .values {
+  display: flex;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-left: 2rem;
+}
+.table .values:last-child {
+  border-bottom: 0;
+}
+.table .values > * {
+  width: 100px;
+  margin-right: auto;
+}
+.table p {
+  margin: 0.625rem 0;
+}
+.table .bolds {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+@media (min-width: 540px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    max-width: 46rem;
+    border-radius: 30px;
+    margin: 7.625rem 2rem;
+  }
+  img {
+    height: 100%;
+    padding: 40px 40px 0 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
